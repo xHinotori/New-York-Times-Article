@@ -74,6 +74,7 @@ nav button:hover{
   border: 1px solid #3f71a7;
   padding: 11px 13px;
   width: 100%;
+  text-transform: uppercase;
 }
 .blue-btns:hover{
   background-color: #3f71a7;
@@ -89,8 +90,8 @@ nav a:hover{
 /* article */
 article{
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
-  font-size: 1.4em;
+  grid-template-columns: 1fr 1fr 2fr 1.5fr 1fr;
+  font-size: 1.3em;
   grid-gap: 30px;
   margin: 20px 0;
 }
@@ -98,10 +99,15 @@ article>* {
   grid-column: 3 / 4;
 }
 
+article p a{
+  text-decoration: underline;
+  color: #326891;
+}
 .picture, .video{
   width: 100%;
   color: #666666;
   font-size: 0.75em;
+  font-family: "Times New Roman";
 }
 .picture{
   grid-column: 2/5;
@@ -118,7 +124,7 @@ h1{
   font-style: italic;
 }
 p{
-  font-family: CSB;
+  font-family: "Times New Roman";
   font-size: 100;
   word-spacing: 3px;
   letter-spacing: 1px;
@@ -176,6 +182,85 @@ p{
 h2{
   font-weight: bold;
   font-size: 1.1em;
+}
+/* side bar */
+h6{
+  font-size: 0.7em;
+  font-weight: bold;
+  border-bottom: 1px solid RGB(0, 0, 0, 20%);
+  padding: 10px 0;
+}
+.side-bar-editor-picks{
+  grid-column: 4/5;
+  align-self: center;
+}
+.editor-post-side{
+  overflow: hidden;
+  margin: 10px 0;
+}
+.side-bar-editor-picks img{
+  width: 75px;
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+}
+.side-bar-editor-picks a{
+  font-size: 15px;
+  display: block;
+  line-height: 1.2;
+  font-family: "Times New Roman";
+}
+
+/* side bar sign up */
+.singup-science-times{
+  grid-column: 4 / 5;
+  margin-top: 100px;
+}
+h5{
+  font-size: 0.9em;
+  font-weight: bold;
+}
+.singup-science-times p{
+  font-size: 0.7em;
+  color: RGB(0, 0, 0, 60%);
+}
+.singup-science-times button{
+  font-size: 0.6em;
+}
+
+/* inflation image */
+.inflation{
+  font-size: 14px;
+}
+.inflation p{
+  color: RGB(0, 0, 0, 60%);
+}
+.inflation-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 100px 15px;
+  position: relative;
+  top: -500px;
+}
+.theory-of-inflation-image p{
+  font-size: 13px;
+  color: black;
+}
+.theory-of-inflation-image span{
+  font-weight: bold;
+  font-size: 11px;
+}
+.theory-of-inflation-image{
+  height: 600px;
+  margin-bottom: 40px;
+}
+.inflation-img-author::before{
+  content: " ";
+  display: block;
+  height: 1px;
+  width: 75px;
+  background: black;
+  margin-bottom: 10px;
 }
 
 /* article footer */
@@ -360,4 +445,9 @@ h3{
 }
 .other-subs:last-child{
   border-top: 1px solid RGB(0, 0, 0, 10%);
+}
+
+
+@media screen {
+
 }
